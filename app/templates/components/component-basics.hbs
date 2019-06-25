@@ -1,30 +1,30 @@
-<h3>Component basics</h3>
+<h2>Component basics</h2>
 
-<div {{on "mouseover" this.hoverAction}}>
+<fieldset {{on "mouseover" this.hoverAction}}>
+    <legend>this.hoveraction triggered:</legend>
 
+    <h4>Property from inside the component</h4>
 
-  <h4>Property from inside the component</h4>
+    <p>
+        myProperty.status: "{{myProperty.status}}"
+        <br>
+        <strong><em>same same but different</em> </strong>
+        <br>
+        <b>this.</b>myProperty.status: "{{this.myProperty.status}}"
+    </p>
 
-  <p>
-    myProperty.status: "{{myProperty.status}}" 
-    <br>
-    <strong><em>same same but different</em> </strong> 
-    <br>
-    <b>this.</b>myProperty.status: "{{this.myProperty.status}}"
-  </p>
+    <h4>Arguments passed to the definition of the component</h4>
+    <p>
+        @myArgument: {{@myArgument}}
+    </p>
 
-  <h4>Arguments passed to the definition of the component</h4>
-  <p>
-    @myArgument: {{@myArgument}}
-  </p>
-
-</div>
+</fieldset>
 
 
 <div {{did-insert this.didInsertAction}}>
-  <h2>New ember-render-modifiers</h2>
+    <h2>New ember-render-modifiers</h2>
 
-  <p>didInsertAction should run after dom finishes.</p>
+    <p>didInsertAction should run after dom finishes.</p>
 </div>
 
 fullName: {{this.fullName}}

@@ -1,5 +1,42 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav>
+    <ul>
+        <li>
+            <LinkTo @route="index">
+                Home
+            </LinkTo> 
+        </li>
+        <li>
+            <LinkTo @route="dropdown">
+                Dropdown
+            </LinkTo> 
+        </li>
+
+        <li>
+            <LinkTo @route="d3">
+                d3
+            </LinkTo> 
+        </li>
+
+        <li>
+            <LinkTo @route="basic-component">
+                Basic component
+            </LinkTo> 
+        </li>
+
+        <li>
+            <LinkTo @route="tracked-example">
+                Tracked Example
+            </LinkTo> 
+        </li>
+
+        <li>
+            <LinkTo @route="trigger-on-viewport">
+                Trigger on viewport
+            </LinkTo> 
+        </li>
+    </ul>
+</nav>
+
+<ButtonWithConfirmation @text="YOYOBUTTON" @clintonArgues={{this.updateSearchParams}} @testText="this is an example" />
 
 {{outlet}}

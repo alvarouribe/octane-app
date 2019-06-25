@@ -6,6 +6,12 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {});
+Router.map(function() {
+  this.route('dropdown');
+  this.route('d3');
+  this.route('basic-component');
+  this.route('tracked-example');
+  this.route('trigger-on-viewport');
+});
 
 export default Router;

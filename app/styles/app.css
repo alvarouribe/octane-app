@@ -1,0 +1,23 @@
+.barchart {
+    width: 300px;
+    height:200px;
+    margin: 0 auto;
+    margin-top:100px;
+}
+
+.toolTip {
+    position: absolute;
+    display: none;
+    height: auto;
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #6F257F;
+    padding: 14px;
+    text-align: center;
+}
+
+.scroll-container {
+    width: 400px;
+    height: 20px;
+    overflow: scroll;
+    border:solid red 1px;
+}

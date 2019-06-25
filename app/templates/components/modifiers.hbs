@@ -1,0 +1,16 @@
+<div>
+    <button {{on "click" this.handleClick}}>
+    Hello, World!
+    </button>
+</div>
+
+<div>
+    <em>this.keyPress will be triggered when the focus is on the element</em>
+    <textarea name="textarea" id="" cols="30" rows="10" {{on "keydown" (fn this.keyPress 'hello')}}></textarea>
+</div>
+
+
+{{!-- This would be nice to do...
+<button {{on "enterViewport" this.handleClick}}>
+  enterViewport ?
+</button> --}}

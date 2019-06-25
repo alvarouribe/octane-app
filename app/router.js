@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('basic-component');
   this.route('tracked-example');
   this.route('trigger-on-viewport');
+  this.route('modifiers');
 });
 
 export default Router;
